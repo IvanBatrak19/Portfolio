@@ -1,0 +1,148 @@
+/* Основні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0056b3, #007BFF);
+    color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #f0f0f0;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: #0056b3;
+    color: #f0f0f0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.progress.html { width: 50%; }
+.progress.css { width: 50%; }
+.progress.js { width: 30%; }
+.progress.python { width: 50%; }
+.progress.sql { width: 30%; }
+
+.languages ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.languages ul li {
+    margin-bottom: 10px;
+}
+
+.job, .school {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #0056b3;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; }
+    header .btn { padding: 8px 20px; font-size: 0.9rem; }
+    .container { width: 90%; }
+    h2 { font-size: 2rem; }
+}
+
+/* Медіа-запити для великих екранів (4K) */
+@media (min-width: 2560px) {
+    header h1 { font-size: 4rem; }
+    header p { font-size: 1.5rem; }
+    header .btn { padding: 12px 30px; font-size: 1.1rem; }
+    h2 { font-size: 3rem; }
+    .container { width: 70%; }
+}
